@@ -1,0 +1,209 @@
+.resume {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.resume-main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.025em;
+}
+
+.resume-tagline {
+  font-size: 1.125rem;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.job {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.job:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.job-header {
+  margin-bottom: 1rem;
+}
+
+.job-title-line {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.25rem 0;
+}
+
+.location {
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.job-dates {
+  color: #6b7280;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.job-description {
+  color: #374151;
+  line-height: 1.7;
+}
+
+.job-description p {
+  margin-bottom: 1rem;
+}
+
+.job-description p:last-child {
+  margin-bottom: 0;
+}
+
+.key-projects {
+  margin-top: 1.5rem;
+}
+
+.key-projects h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 1rem 0;
+}
+
+.key-projects ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.key-projects li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.key-projects li:last-child {
+  margin-bottom: 0;
+}
+
+.key-projects strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.skills-sidebar {
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.skill-category:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.skill-category h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.skill-category p {
+  color: #374151;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .resume-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .skills-sidebar {
+    position: static;
+    order: 1;
+  }
+
+  .experience-section {
+    order: 0;
+  }
+
+  .resume-name {
+    font-size: 2rem;
+  }
+
+  .resume-tagline {
+    font-size: 1rem;
+  }
+
+  .job-title-line {
+    font-size: 1rem;
+  }
+
+  .skill-category {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .resume-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .resume-section {
+    margin-bottom: 2rem;
+  }
+
+  .job {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+}
