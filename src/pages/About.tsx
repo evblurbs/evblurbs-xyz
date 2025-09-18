@@ -12,6 +12,11 @@ const About = () => {
             experiment when I was considering new opportunities this September,
             but I think I'll keep it going.
           </p>
+          <p>
+            When I'm not working or tinkering here, you'll probably find me
+            exploring NYC's food scene, shooting hoops, or at a Nets or Liberty
+            game.
+          </p>
         </div>
       </div>
     </div>
