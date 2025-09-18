@@ -38,6 +38,14 @@ const Layout = () => {
               Photos
             </Link>
             <Link
+              to="/projects"
+              className={`nav-link ${
+                location.pathname === "/projects" ? "active" : ""
+              }`}
+            >
+              Projects
+            </Link>
+            <Link
               to="/resume"
               className={`nav-link ${
                 location.pathname === "/resume" ? "active" : ""
