@@ -36,8 +36,11 @@
 }
 
 .footer-message .heart {
-  color: #000000 !important;
-  filter: grayscale(100%) brightness(0);
+  color: #006bb6 !important;
+}
+
+.footer-message .nyc {
+  color: #f58426 !important;
 }
 
 /* Mobile styles */
