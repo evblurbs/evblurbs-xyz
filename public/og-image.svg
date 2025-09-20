@@ -6,17 +6,17 @@
   
   
   <!-- Name -->
-  <text x="120" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="124" font-weight="700" fill="#111827">Evan Johnson</text>
+  <text x="120" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="124" font-weight="700" fill="#111827">Evan Johnson</text>
   
   <!-- Title -->
   
   <!-- Description -->
-  <text x="120" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="50" font-weight="400" fill="#374151">Personal website for a front end engineer,</text>
-  <text x="120" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="50" font-weight="400" fill="#374151">foodie, amateur photographer, and reader.</text>
+  <text x="120" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="50" font-weight="400" fill="#374151">Personal website for a front end engineer,</text>
+  <text x="120" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="50" font-weight="400" fill="#374151">foodie, amateur photographer, and reader.</text>
   
   <!-- Tech stack -->
-  <text x="120" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="500" fill="#111827">React • TypeScript • JavaScript • Amazon</text>
+  <text x="120" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="500" fill="#111827">React • TypeScript • JavaScript • Amazon</text>
   
   <!-- Website URL -->
-  <text x="120" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#111827">evblurbs.xyz</text>
+  <text x="120" y="480" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#111827">evblurbs.xyz</text>
 </svg>
