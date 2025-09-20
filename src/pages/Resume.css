@@ -188,11 +188,6 @@
 }
 
 @media (max-width: 640px) {
-  .resume-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-  }
-
   .resume-section {
     margin-bottom: 2rem;
   }

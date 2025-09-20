@@ -6,7 +6,7 @@ const Resume = () => {
     <div className="page">
       <div className="page-content">
         <div className="resume">
-          <header className="resume-header">
+          <header className="resume-header clearfix">
             <h2 className="resume-name">Evan Johnson</h2>
             <p className="resume-tagline">
               Front End Engineer with over a decade of experience delivering
