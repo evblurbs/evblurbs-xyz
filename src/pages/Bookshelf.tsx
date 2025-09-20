@@ -4,6 +4,15 @@ import "./Bookshelf.css";
 const Bookshelf = () => {
   const books = [
     {
+      title:
+        "Harlem: The Four Hundred Year History from Dutch Village to Capital of Black America",
+      authors: "Jonathan Gill",
+      description:
+        "A sweeping, deeply researched history tracing Harlem's evolution from its early days as a Dutch agricultural settlement, through colonial and revolutionary times, to its central role in the 20th-century African-American cultural, artistic, and political life. The book also covers Harlem's challenges and transformations in later decades, including decline, renewal, and gentrification.",
+      amazonLink:
+        "https://www.amazon.com/Harlem-Hundred-History-Village-Capital/dp/0802145744",
+    },
+    {
       title: "The Courage to Be Disliked",
       authors: "Ichiro Kishimi & Fumitake Koga",
       description:
