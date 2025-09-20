@@ -2,9 +2,18 @@ import "./Page.css";
 import "./Resume.css";
 
 const Resume = () => {
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
     <div className="page">
       <div className="page-content">
+        <div className="resume-header-actions">
+          <a href="#" onClick={handlePrint} className="print-link">
+            Print Version
+          </a>
+        </div>
         <div className="resume">
           <header className="resume-header clearfix">
             <h2 className="resume-name">Evan Johnson</h2>
@@ -156,6 +165,15 @@ const Resume = () => {
               </div>
             </aside>
           </div>
+        </div>
+
+        {/* Print-only footer */}
+        <div className="print-footer">
+          <span>New York, NY</span>
+          <span>hello@evblurbs.xyz</span>
+          <span>www.linkedin.com/in/evblurbs</span>
+          <span>www.evblurbs.xyz</span>
+          <span>www.github.com/evblurbs</span>
         </div>
       </div>
     </div>

@@ -19,6 +19,7 @@ const Footer = () => {
           >
             GitHub
           </a>
+          <a href="mailto:hello@evblurbs.xyz">hello@evblurbs.xyz</a>
         </div>
         <div className="footer-message">
           Made with <span className="heart">❤️</span> in NYC
