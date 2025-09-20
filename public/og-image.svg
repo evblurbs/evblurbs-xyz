@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#ffffff"/>
+  
+  
+  
+  
+  <!-- Name -->
+  <text x="320" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#111827">Evan Johnson</text>
+  
+  <!-- Title -->
+  
+  <!-- Description -->
+  <text x="320" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#374151">Personal website for a front end engineer,</text>
+  <text x="320" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#374151">foodie, amateur photographer, and reader.</text>
+  
+  <!-- Tech stack -->
+  <text x="320" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="500" fill="#111827">React • TypeScript • JavaScript • Amazon</text>
+  
+  <!-- Website URL -->
+  <text x="320" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#111827">evblurbs.xyz</text>
+</svg>
