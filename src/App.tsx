@@ -6,6 +6,7 @@ import Photos from "./pages/Photos";
 import Projects from "./pages/Projects";
 import TenYC from "./pages/10YC";
 import SaturdayHoops from "./pages/SaturdayHoops";
+import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="projects/10yc" element={<TenYC />} />
           <Route path="projects/saturday-hoops" element={<SaturdayHoops />} />
+          <Route path="projects/portfolio" element={<Portfolio />} />
           <Route path="resume" element={<Resume />} />
         </Route>
       </Routes>

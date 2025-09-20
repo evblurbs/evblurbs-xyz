@@ -33,6 +33,17 @@ const Projects = () => {
                 Read more →
               </Link>
             </div>
+
+            <div className="project-item">
+              <h3 className="project-title">Portfolio</h3>
+              <p className="project-description">
+                This website which shares what I've read, projects that I've
+                worked on, and my resume.
+              </p>
+              <Link to="/projects/portfolio" className="project-link">
+                Read more →
+              </Link>
+            </div>
           </div>
         </div>
       </div>
