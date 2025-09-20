@@ -172,8 +172,8 @@ const Resume = () => {
           <span>New York, NY</span>
           <span>hello@evblurbs.xyz</span>
           <span>www.linkedin.com/in/evblurbs</span>
-          <span>www.evblurbs.xyz</span>
           <span>www.github.com/evblurbs</span>
+          <span>www.evblurbs.xyz</span>
         </div>
       </div>
     </div>
