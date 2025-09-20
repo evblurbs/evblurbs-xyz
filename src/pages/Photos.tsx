@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Page.css";
 import "./Photos.css";
 
 const Photos = () => {
   const [photos, setPhotos] = useState<string[]>([]);
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const [isTwoColumnLayout, setIsTwoColumnLayout] = useState(false);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // In a real app, you'd fetch this from an API or file system
@@ -20,8 +22,33 @@ const Photos = () => {
       "photo8.jpg",
       "photo9.jpg",
     ];
-    setPhotos(photoList);
+
+    const shuffledPhotoList = photoList.sort(() => Math.random() - 0.5);
+    setPhotos(shuffledPhotoList);
   }, []);
+
+  useEffect(() => {
+    const checkLayout = () => {
+      if (gridRef.current) {
+        // Get the computed grid styles
+        const gridStyles = window.getComputedStyle(gridRef.current);
+        const gridTemplateColumns = gridStyles.gridTemplateColumns;
+
+        // Count the number of columns by counting the number of 'fr' units or fixed widths
+        const columnCount = gridTemplateColumns.split(" ").length;
+        setIsTwoColumnLayout(columnCount === 2);
+      }
+    };
+
+    // Use a timeout to ensure the grid is rendered
+    const timeoutId = setTimeout(checkLayout, 100);
+    window.addEventListener("resize", checkLayout);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("resize", checkLayout);
+    };
+  }, [photos]);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -65,20 +92,22 @@ const Photos = () => {
             </a>
             .
           </p>
-          <div className="photos-grid">
-            {photos.map((photo, index) => (
-              <div
-                key={index}
-                className="photo-item"
-                onClick={() => openOverlay(photo)}
-              >
-                <img
-                  src={`/photos/${photo}`}
-                  alt={`Photography ${index + 1}`}
-                  className="photo-image"
-                />
-              </div>
-            ))}
+          <div className="photos-grid" ref={gridRef}>
+            {(isTwoColumnLayout ? photos.slice(0, 8) : photos).map(
+              (photo, index) => (
+                <div
+                  key={index}
+                  className="photo-item"
+                  onClick={() => openOverlay(photo)}
+                >
+                  <img
+                    src={`/photos/${photo}`}
+                    alt={`Photography ${index + 1}`}
+                    className="photo-image"
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
