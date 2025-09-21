@@ -1,11 +1,31 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "./Footer";
 import "./Layout.css";
 
 const Layout = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Scroll to top when route changes
+  useEffect(() => {
+    // Temporarily disable smooth scrolling
+    const html = document.documentElement;
+    const body = document.body;
+
+    const originalScrollBehavior = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
+    body.style.scrollBehavior = "auto";
+
+    // Force scroll to top
+    window.scrollTo(0, 0);
+
+    // Restore original scroll behavior after a brief delay
+    setTimeout(() => {
+      html.style.scrollBehavior = originalScrollBehavior;
+      body.style.scrollBehavior = originalScrollBehavior;
+    }, 10);
+  }, [location.pathname]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
