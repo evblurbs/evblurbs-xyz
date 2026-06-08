@@ -8,7 +8,7 @@ const posts = [
     slug: "teaching-a-computer-to-find-made-baskets",
     date: "June 7, 2026",
     excerpt:
-      "I spent a Sunday morning rebuilding a made-basket detector for Saturday Hoops NYC with Claude. Here's the approach, the dead ends, and what I learned along the way.",
+      "Using computer vision to spot made shots in pickup basketball. I spent a Sunday morning rebuilding the detector for Saturday Hoops NYC with Claude — here's the approach, the dead ends, and what I learned along the way.",
   },
 ];
 
