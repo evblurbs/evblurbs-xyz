@@ -7,6 +7,8 @@ import Projects from "./pages/Projects";
 import TenYC from "./pages/10YC";
 import SaturdayHoops from "./pages/SaturdayHoops";
 import Portfolio from "./pages/Portfolio";
+import Blog from "./pages/Blog";
+import MadeBaskets from "./pages/MadeBaskets";
 import Resume from "./pages/Resume";
 import "./App.css";
 
@@ -22,6 +24,11 @@ function App() {
           <Route path="projects/10yc" element={<TenYC />} />
           <Route path="projects/saturday-hoops" element={<SaturdayHoops />} />
           <Route path="projects/portfolio" element={<Portfolio />} />
+          <Route path="blog" element={<Blog />} />
+          <Route
+            path="blog/teaching-a-computer-to-find-made-baskets"
+            element={<MadeBaskets />}
+          />
           <Route path="resume" element={<Resume />} />
         </Route>
       </Routes>

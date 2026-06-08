@@ -13,8 +13,8 @@ const SaturdayHoops = () => {
             </Link>
             <h1 className="project-title">Saturday Hoops NYC</h1>
             <p className="project-tagline">
-              A meetup group and web app that allows users to sign up for
-              pick-up basketball games and view highlights from past games.
+              A web app for my pick-up basketball community in NYC — players sign
+              up for games, pay, get balanced teams, and relive their highlights.
             </p>
           </div>
 
@@ -27,146 +27,123 @@ const SaturdayHoops = () => {
                 started as a small Meetup group quickly grew into a Slack
                 community at work with hundreds of members — and eventually
                 became too much to manage manually. To streamline things, I
-                built a site that handled RSVPs and payments, replacing my old
+                built{" "}
+                <a
+                  href="https://www.saturdayhoopsnyc.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  saturdayhoopsnyc.com
+                </a>
+                , a site that handles RSVPs and payments, replacing my old
                 spreadsheet-and-Venmo system.
               </p>
               <p>
-                Over time, I added another layer: game highlights. At first, I
+                Over time, I added two things that make the group feel less like
+                a logistics chore and more like a product. The first is{" "}
+                <strong>automated team balancing</strong>: the night before each
+                game, a job sorts everyone into even teams using their skill,
+                height, position, and who they've played with before, so I'm not
+                hand-picking squads in the gym anymore.
+              </p>
+              <p>
+                The second is <strong>game highlights</strong>. At first I
                 edited the footage myself, but as demand grew and I had less
-                time, I explored using AI. I built a pipeline that detects made
-                baskets, then automatically cuts clips a few seconds before and
-                after, allowing me to generate highlight reels quickly and
-                consistently. See this{" "}
+                time, I built a pipeline that detects made baskets and cuts clips
+                a few seconds before and after each one — so I can put together
+                reels quickly and consistently. I wrote about how that detector
+                came together in{" "}
+                <Link to="/blog/teaching-a-computer-to-find-made-baskets">
+                  Teaching a Computer to Find Made Baskets
+                </Link>
+                . See a finished reel{" "}
                 <a
                   href="https://youtu.be/kvA9i5kTgjE?si=3zg1V-6lkXGDxQ2X"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  example
+                  here
                 </a>
                 .
-              </p>
-              <p>
-                The project is currently on pause for the summer — with players
-                traveling and gyms hit-or-miss on air conditioning — but we’re
-                planning to restart games and highlights this fall.
-              </p>
-              <p>
-                <b>
-                  Below is the AI's own analysis of my code repositories for
-                  this project.
-                </b>
               </p>
             </div>
 
             <div className="project-section">
               <h2>Technology Stack</h2>
 
-              <h3>Frontend Application</h3>
-              <p>
-                The web application is built using Next.js 14 with React 18,
-                providing a modern, server-side rendered experience optimized
-                for performance and SEO:
-              </p>
+              <h3>Frontend</h3>
               <ul>
                 <li>
-                  <strong>Core Technologies:</strong> Next.js 14.1.4 with App
-                  Router, React 18.2.0, TypeScript 5.5.0, Tailwind CSS 3.4.3
-                  with DaisyUI components
+                  <strong>Framework:</strong> Next.js 16 (App Router) with React
+                  19 and TypeScript
                 </li>
                 <li>
-                  <strong>Key Features:</strong> Responsive design with
-                  Knicks-themed color scheme, real-time game updates, adaptive
-                  video player with quality control
+                  <strong>Styling:</strong> Tailwind CSS with DaisyUI, in a
+                  Knicks-themed blue-and-orange palette
                 </li>
                 <li>
-                  <strong>UI Components:</strong> Custom video player with
-                  tagging overlay, game registration system, user profiles with
-                  highlight galleries
+                  <strong>Data & state:</strong> SWR for fetching and caching,{" "}
+                  <code>@dnd-kit</code> for drag-and-drop reel reordering, Zod
+                  for schema validation
                 </li>
                 <li>
-                  <strong>State Management:</strong> SWR for data fetching with
-                  intelligent caching, React Context for client-side state
+                  <strong>Video playback:</strong> HLS.js for adaptive streaming
+                  with a custom player and tagging overlay
                 </li>
               </ul>
 
-              <h3>Backend API & Database</h3>
-              <p>
-                The backend leverages Next.js API routes with MongoDB for a
-                serverless, scalable architecture:
-              </p>
+              <h3>Backend & Data</h3>
               <ul>
                 <li>
-                  <strong>Core Technologies:</strong> Next.js API routes,
-                  MongoDB Atlas with Mongoose ODM, NextAuth.js for
-                  authentication
+                  <strong>Database & auth:</strong> Supabase (PostgreSQL) with
+                  Google OAuth, row-level security, and ~25 tracked migrations
+                  as the schema evolved from games to highlights to memberships
+                  and waitlists
                 </li>
                 <li>
-                  <strong>Database Architecture:</strong> Optimized schemas for
-                  Games, Users, and Highlights with proper indexing for
-                  performance
+                  <strong>Hosting:</strong> Vercel, including cron jobs that run
+                  team assignment and process the waitlist on a schedule
                 </li>
                 <li>
-                  <strong>Key Collections:</strong> Games (date, signups,
-                  maxPlayers), Users (authentication, Stripe integration),
-                  Highlights (video metadata, player tagging)
-                </li>
-                <li>
-                  <strong>API Features:</strong> RESTful endpoints, real-time
-                  data fetching, Stripe webhook integration for payments
+                  <strong>Bot protection:</strong> Cloudflare Turnstile on
+                  sign-up and payment flows
                 </li>
               </ul>
 
-              <h3>Video Processing & Storage</h3>
-              <p>
-                The platform includes a sophisticated video management system
-                built on AWS infrastructure:
-              </p>
+              <h3>Payments</h3>
               <ul>
                 <li>
-                  <strong>Core Technologies:</strong> AWS S3 for video storage,
-                  CloudFront CDN for global delivery, custom video processing
-                  pipeline
-                </li>
-                <li>
-                  <strong>Video Features:</strong> Multi-quality adaptive
-                  streaming (lg/md/sm), automatic player tagging system,
-                  highlight compilation
-                </li>
-                <li>
-                  <strong>Storage Architecture:</strong> Organized by date
-                  folders with quality variants, metadata stored in MongoDB for
-                  fast queries
-                </li>
-                <li>
-                  <strong>Performance:</strong> Preloading system, intelligent
-                  quality adjustment based on playback performance, optimized
-                  for mobile viewing
+                  <strong>Stripe:</strong> one-off game checkout, prepaid credit
+                  packs, and a monthly membership subscription, with webhooks
+                  managing access and automatic credit refunds when a game
+                  doesn't fill
                 </li>
               </ul>
 
-              <h3>Authentication & Payments</h3>
-              <p>
-                The platform integrates multiple authentication methods with
-                Stripe for seamless user experience:
-              </p>
+              <h3>Video Pipeline & Storage</h3>
               <ul>
                 <li>
-                  <strong>Core Technologies:</strong> NextAuth.js with Google
-                  OAuth and email providers, Stripe for payment processing
+                  <strong>Storage & delivery:</strong> AWS S3 for raw and
+                  processed footage, CloudFront CDN for fast global playback
                 </li>
                 <li>
-                  <strong>Authentication:</strong> Google OAuth integration,
-                  email magic links, MongoDB adapter for user persistence
+                  <strong>Made-basket detection:</strong> a Python computer-vision
+                  pipeline that scans low-res copies of each game, finds the rim,
+                  and flags every shot that reaches it — turning two hours of
+                  footage into a short list of moments to review
                 </li>
                 <li>
-                  <strong>Payment System:</strong> Stripe Checkout for game
-                  registration, webhook integration for access management,
-                  customer portal for subscription management
+                  <strong>Clip rendering:</strong> Shotstack to render
+                  share-ready, watermarked clips for players to post
                 </li>
+              </ul>
+
+              <h3>Email</h3>
+              <ul>
                 <li>
-                  <strong>Security:</strong> JWT-based sessions, secure API
-                  routes with user validation, admin-only game creation
+                  <strong>Transactional email:</strong> Mailgun with React Email
+                  templates for game confirmations, team assignments, final
+                  rosters, and membership welcomes
                 </li>
               </ul>
             </div>
@@ -174,101 +151,52 @@ const SaturdayHoops = () => {
             <div className="project-section">
               <h2>Key Features</h2>
 
-              <h3>Game Management System</h3>
+              <h3>Registration & Payments</h3>
               <p>
-                The platform provides comprehensive game organization with
-                real-time registration tracking, player capacity management, and
-                automated scheduling. Users can view upcoming games, register
-                for sessions, and see who else is playing.
+                Players can pay per game, buy credits, or subscribe to a monthly
+                membership for a discounted rate. The site tracks signups in real
+                time, enforces capacity, collects a waiver on first sign-up, and
+                runs a waitlist that automatically refunds credits when a spot
+                doesn't open up.
               </p>
 
-              <h3>Intelligent Video Highlights</h3>
+              <h3>Automated Team Balancing</h3>
               <p>
-                The most innovative feature is the automatic video highlight
-                system that captures game footage and allows players to tag
-                themselves in their best moments. The system includes adaptive
-                quality control, automatic preloading, and a sophisticated
-                tagging overlay that appears during video playback.
+                The night before a game, a scheduled job sorts players into even
+                teams. It scores possible lineups on skill, height, position
+                variety, gender balance, and a penalty for putting the same
+                people together every week, and supports both two-team and
+                three-team formats depending on turnout. Teams are emailed once
+                they're set.
               </p>
 
-              <h3>Player-Centric Experience</h3>
+              <h3>Highlights & Personal Reels</h3>
               <p>
-                Instead of generic game footage, each player gets personalized
-                highlight reels based on their tagged moments. The system tracks
-                individual performance clips, creates user-specific highlight
-                collections, and provides easy sharing capabilities.
+                Each player gets a personalized highlight feed built from the
+                made-basket detector. They can star and reorder clips into their
+                own reel, like other players' clips, and share to Instagram with
+                a custom framing tool — all backed by the S3 and CloudFront video
+                pipeline.
               </p>
 
-              <h3>Community Building</h3>
+              <h3>Profiles & Leaderboard</h3>
               <p>
-                The platform fosters community through user profiles, game
-                attendance tracking, and social features. Players can see their
-                game history, view other players' highlights, and maintain
-                connections beyond the court.
+                Player profiles capture height, positions, jersey size, and
+                pronouns, surface per-game clip counts and top teammates, and
+                feed a multi-season leaderboard for the group.
               </p>
             </div>
 
             <div className="project-section">
-              <h2>Architecture & Development</h2>
-
-              <h3>Development Approach</h3>
+              <h2>What's Next</h2>
               <p>
-                Built on the ShipFast template but heavily customized for
-                basketball community needs, the platform emphasizes performance,
-                user experience, and community engagement. The codebase
-                demonstrates modern React patterns with TypeScript for type
-                safety.
-              </p>
-
-              <h3>Deployment Strategy</h3>
-              <p>
-                Deployed on Vercel with MongoDB Atlas for database hosting, AWS
-                S3 for video storage, and CloudFront for global content
-                delivery. The serverless architecture ensures scalability and
-                cost-effectiveness.
-              </p>
-
-              <h3>Technical Challenges & Solutions</h3>
-              <ul>
-                <li>
-                  <strong>Video Performance:</strong> Implemented adaptive
-                  quality streaming with automatic downgrade/upgrade based on
-                  playback performance, preloading system for seamless
-                  transitions
-                </li>
-                <li>
-                  <strong>Player Tagging:</strong> Created an overlay system
-                  that appears during video playback, allowing users to tag
-                  themselves in highlights with a 10-second timeout
-                </li>
-                <li>
-                  <strong>Real-time Updates:</strong> SWR integration with
-                  intelligent caching and revalidation for live game updates and
-                  registration changes
-                </li>
-                <li>
-                  <strong>Mobile Optimization:</strong> Responsive design with
-                  touch-friendly controls, optimized video player for mobile
-                  devices
-                </li>
-              </ul>
-            </div>
-
-            <div className="project-section">
-              <h2>Future Enhancements</h2>
-              <p>
-                The architecture supports planned enhancements including
-                advanced analytics for player performance tracking, social
-                features for following favorite players, tournament organization
-                tools, and integration with wearable devices for performance
-                metrics. The modular design allows for easy expansion of video
-                features, community tools, and game management capabilities.
-              </p>
-              <p>
-                The platform represents a successful fusion of sports community
-                management and modern web technology, creating a unique solution
-                that goes beyond simple game organization to build lasting
-                digital memories of athletic achievement.
+                The detection pipeline is still young, and most of what's next
+                lives there: cutting editing time further, reducing false
+                positives, and adding player tracking so a clip can know{" "}
+                <em>who</em> made the shot, not just that one went in. Off the
+                court, I'm continuing to refine the membership model, the
+                waitlist mechanics, and the sharing tools that help the group
+                hold onto these games as they get older.
               </p>
             </div>
           </div>

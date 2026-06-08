@@ -26,8 +26,9 @@ const Projects = () => {
             <div className="project-item">
               <h3 className="project-title">Saturday Hoops NYC</h3>
               <p className="project-description">
-                A meetup group and web app that allows users to sign up for
-                pick-up basketball games and view highlights from past games.
+                A web app for my pick-up basketball community in NYC — players
+                sign up for games, pay, get balanced teams, and view their
+                highlights.
               </p>
               <Link to="/projects/saturday-hoops" className="project-link">
                 Read more →
