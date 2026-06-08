@@ -7,7 +7,7 @@ export const blogPosts = [
     slug: "teaching-a-computer-to-find-made-baskets",
     title: "Teaching a Computer to Find Made Baskets",
     description:
-      "I spent a Sunday morning rebuilding a made-basket detector for Saturday Hoops NYC with Claude. Here's the approach, the dead ends, and what I learned along the way.",
+      "Using computer vision to spot made shots in pickup basketball. I spent a Sunday morning rebuilding the detector for Saturday Hoops NYC with Claude — here's the approach, the dead ends, and what I learned along the way.",
     image: "/blog/made-baskets/og-image.png",
   },
 ];

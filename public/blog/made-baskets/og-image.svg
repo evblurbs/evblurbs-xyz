@@ -10,8 +10,9 @@
   <text x="120" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="92" font-weight="700" fill="#111827">to Find Made Baskets</text>
 
   <!-- Excerpt -->
-  <text x="120" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="#374151">Rebuilding a made-basket detector with Claude.</text>
+  <text x="120" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="#374151">Using computer vision to spot made shots</text>
+  <text x="120" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="#374151">in pickup basketball — rebuilt with Claude.</text>
 
   <!-- Website URL -->
-  <text x="120" y="540" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#111827">evblurbs.xyz</text>
+  <text x="120" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" fill="#111827">evblurbs.xyz</text>
 </svg>
