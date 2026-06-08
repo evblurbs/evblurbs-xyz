@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/blog/teaching-a-computer-to-find-made-baskets",
+      "destination": "/blog/teaching-a-computer-to-find-made-baskets.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
