@@ -78,6 +78,14 @@ const Layout = () => {
               Projects
             </Link>
             <Link
+              to="/blog"
+              className={`nav-link ${
+                location.pathname.startsWith("/blog") ? "active" : ""
+              }`}
+            >
+              Blog
+            </Link>
+            <Link
               to="/resume"
               className={`nav-link ${
                 location.pathname === "/resume" ? "active" : ""
@@ -147,6 +155,15 @@ const Layout = () => {
                 onClick={closeMobileMenu}
               >
                 Projects
+              </Link>
+              <Link
+                to="/blog"
+                className={`mobile-nav-link ${
+                  location.pathname.startsWith("/blog") ? "active" : ""
+                }`}
+                onClick={closeMobileMenu}
+              >
+                Blog
               </Link>
               <Link
                 to="/resume"
