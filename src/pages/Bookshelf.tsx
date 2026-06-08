@@ -4,6 +4,15 @@ import "./Bookshelf.css";
 const Bookshelf = () => {
   const books = [
     {
+      title: "Deep Work: Rules for Focused Success in a Distracted World",
+      authors: "Cal Newport",
+      description:
+        "A guide to cultivating deep, distraction-free concentration as a skill and a competitive advantage. Newport argues that the ability to focus without interruption is increasingly rare and valuable, and offers practical strategies for building it—rituals, deliberate practice, embracing boredom, and cutting back on shallow, low-value busywork.",
+      amazonLink:
+        "https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692",
+      isFavorite: true,
+    },
+    {
       title:
         "Harlem: The Four Hundred Year History from Dutch Village to Capital of Black America",
       authors: "Jonathan Gill",
