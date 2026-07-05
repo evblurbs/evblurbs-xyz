@@ -46,9 +46,9 @@ const Layout = () => {
           {/* Desktop Navigation */}
           <div className="nav-links">
             <Link
-              to="/"
+              to="/about"
               className={`nav-link ${
-                location.pathname === "/" ? "active" : ""
+                location.pathname === "/about" ? "active" : ""
               }`}
             >
               About
@@ -121,9 +121,9 @@ const Layout = () => {
           <div className="mobile-menu" onClick={(e) => e.stopPropagation()}>
             <div className="mobile-nav-links">
               <Link
-                to="/"
+                to="/about"
                 className={`mobile-nav-link ${
-                  location.pathname === "/" ? "active" : ""
+                  location.pathname === "/about" ? "active" : ""
                 }`}
                 onClick={closeMobileMenu}
               >
