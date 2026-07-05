@@ -7,7 +7,7 @@ import "./Page.css";
 import "./Home.css";
 
 const favoriteBooks = books.filter((b) => b.isFavorite);
-const previewPhotos = photos.slice(0, 6);
+const previewPhotos = photos.slice(0, 5);
 
 const Home = () => {
   return (
