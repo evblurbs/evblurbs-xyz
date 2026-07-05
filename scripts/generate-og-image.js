@@ -8,6 +8,10 @@ const images = [
     svg: './public/blog/made-baskets/og-image.svg',
     png: './public/blog/made-baskets/og-image.png',
   },
+  {
+    svg: './public/blog/ignore-everything-else/og-image.svg',
+    png: './public/blog/ignore-everything-else/og-image.png',
+  },
 ];
 
 try {

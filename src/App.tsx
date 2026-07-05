@@ -9,6 +9,7 @@ import SaturdayHoops from "./pages/SaturdayHoops";
 import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import MadeBaskets from "./pages/MadeBaskets";
+import IgnoreEverythingElse from "./pages/IgnoreEverythingElse";
 import Resume from "./pages/Resume";
 import "./App.css";
 
@@ -28,6 +29,10 @@ function App() {
           <Route
             path="blog/teaching-a-computer-to-find-made-baskets"
             element={<MadeBaskets />}
+          />
+          <Route
+            path="blog/teaching-a-computer-to-ignore-everything-else"
+            element={<IgnoreEverythingElse />}
           />
           <Route path="resume" element={<Resume />} />
         </Route>

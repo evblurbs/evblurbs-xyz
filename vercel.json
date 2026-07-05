@@ -5,6 +5,10 @@
       "destination": "/blog/teaching-a-computer-to-find-made-baskets.html"
     },
     {
+      "source": "/blog/teaching-a-computer-to-ignore-everything-else",
+      "destination": "/blog/teaching-a-computer-to-ignore-everything-else.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="690" viewBox="0 0 790 690" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+<rect width="790" height="690" fill="#ffffff"/>
+<text x="40" y="44" font-size="23" font-weight="700" fill="#16202e">Which clues separate a make from a miss</text>
+<text x="40" y="70" font-size="14" fill="#8892a0">Feature importance in the recall-safe model — the post-rim “drop or bounce?” signals dominate.</text>
+<text x="210" y="115" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">peak_above_after</text>
+<rect x="222" y="104" width="375.5" height="14" rx="3" fill="#e8712e"/>
+<text x="605.5" y="115" font-size="11" fill="#8892a0">0.216</text>
+<text x="210" y="137" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">returned_above</text>
+<rect x="222" y="126" width="172.1" height="14" rx="3" fill="#e8712e"/>
+<text x="402.1" y="137" font-size="11" fill="#8892a0">0.099</text>
+<text x="210" y="159" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">final_dy</text>
+<rect x="222" y="148" width="130.4" height="14" rx="3" fill="#e8712e"/>
+<text x="360.4" y="159" font-size="11" fill="#8892a0">0.075</text>
+<text x="210" y="181" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">rim_y</text>
+<rect x="222" y="170" width="114.7" height="14" rx="3" fill="#3f6fa8"/>
+<text x="344.7" y="181" font-size="11" fill="#8892a0">0.066</text>
+<text x="210" y="203" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">dy_center</text>
+<rect x="222" y="192" width="99.1" height="14" rx="3" fill="#3f6fa8"/>
+<text x="329.1" y="203" font-size="11" fill="#8892a0">0.057</text>
+<text x="210" y="225" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">net_dy_after</text>
+<rect x="222" y="214" width="88.7" height="14" rx="3" fill="#e8712e"/>
+<text x="318.7" y="225" font-size="11" fill="#8892a0">0.051</text>
+<text x="210" y="247" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">revs_after</text>
+<rect x="222" y="236" width="83.4" height="14" rx="3" fill="#e8712e"/>
+<text x="313.4" y="247" font-size="11" fill="#8892a0">0.048</text>
+<text x="210" y="269" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">dwell_before</text>
+<rect x="222" y="258" width="78.2" height="14" rx="3" fill="#3f6fa8"/>
+<text x="308.2" y="269" font-size="11" fill="#8892a0">0.045</text>
+<text x="210" y="291" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">dx_center</text>
+<rect x="222" y="280" width="73.0" height="14" rx="3" fill="#3f6fa8"/>
+<text x="303.0" y="291" font-size="11" fill="#8892a0">0.042</text>
+<text x="210" y="313" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">vanish_frac</text>
+<rect x="222" y="302" width="66.1" height="14" rx="3" fill="#e8712e"/>
+<text x="296.1" y="313" font-size="11" fill="#8892a0">0.038</text>
+<text x="210" y="335" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">descent</text>
+<rect x="222" y="324" width="64.3" height="14" rx="3" fill="#3f6fa8"/>
+<text x="294.3" y="335" font-size="11" fill="#8892a0">0.037</text>
+<text x="210" y="357" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">peak_above</text>
+<rect x="222" y="346" width="57.4" height="14" rx="3" fill="#3f6fa8"/>
+<text x="287.4" y="357" font-size="11" fill="#8892a0">0.033</text>
+<text x="210" y="379" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">converged</text>
+<rect x="222" y="368" width="52.1" height="14" rx="3" fill="#2f8f6a"/>
+<text x="282.1" y="379" font-size="11" fill="#8892a0">0.030</text>
+<text x="210" y="401" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">final_dx</text>
+<rect x="222" y="390" width="48.7" height="14" rx="3" fill="#e8712e"/>
+<text x="278.7" y="401" font-size="11" fill="#8892a0">0.028</text>
+<text x="210" y="423" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">n_before</text>
+<rect x="222" y="412" width="43.5" height="14" rx="3" fill="#3f6fa8"/>
+<text x="273.5" y="423" font-size="11" fill="#8892a0">0.025</text>
+<text x="210" y="445" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">approach_speed</text>
+<rect x="222" y="434" width="40.0" height="14" rx="3" fill="#3f6fa8"/>
+<text x="270.0" y="445" font-size="11" fill="#8892a0">0.023</text>
+<text x="210" y="467" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">horiz_drift_before</text>
+<rect x="222" y="456" width="31.3" height="14" rx="3" fill="#3f6fa8"/>
+<text x="261.3" y="467" font-size="11" fill="#8892a0">0.018</text>
+<text x="210" y="489" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">density_start</text>
+<rect x="222" y="478" width="24.3" height="14" rx="3" fill="#2f8f6a"/>
+<text x="254.3" y="489" font-size="11" fill="#8892a0">0.014</text>
+<text x="210" y="511" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">down_frac</text>
+<rect x="222" y="500" width="24.3" height="14" rx="3" fill="#3f6fa8"/>
+<text x="254.3" y="511" font-size="11" fill="#8892a0">0.014</text>
+<text x="210" y="533" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">density_peak</text>
+<rect x="222" y="522" width="22.6" height="14" rx="3" fill="#2f8f6a"/>
+<text x="252.6" y="533" font-size="11" fill="#8892a0">0.013</text>
+<text x="210" y="555" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">density_delta</text>
+<rect x="222" y="544" width="20.9" height="14" rx="3" fill="#2f8f6a"/>
+<text x="250.9" y="555" font-size="11" fill="#8892a0">0.012</text>
+<text x="210" y="577" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">came_from_above</text>
+<rect x="222" y="566" width="13.9" height="14" rx="3" fill="#3f6fa8"/>
+<text x="243.9" y="577" font-size="11" fill="#8892a0">0.008</text>
+<text x="210" y="599" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">density_end</text>
+<rect x="222" y="588" width="13.9" height="14" rx="3" fill="#2f8f6a"/>
+<text x="243.9" y="599" font-size="11" fill="#8892a0">0.008</text>
+<text x="210" y="621" font-size="11.5" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace" text-anchor="end" fill="#3a4453">rim_r</text>
+<rect x="222" y="610" width="0.5" height="14" rx="3" fill="#3f6fa8"/>
+<text x="230.5" y="621" font-size="11" fill="#8892a0">0.000</text>
+<rect x="40" y="649" width="13" height="13" rx="3" fill="#e8712e"/><text x="59" y="660" font-size="12.5" fill="#4a5568">after the rim — drop or bounce?</text>
+<rect x="320" y="649" width="13" height="13" rx="3" fill="#3f6fa8"/><text x="339" y="660" font-size="12.5" fill="#4a5568">approach &amp; position</text>
+<rect x="540" y="649" width="13" height="13" rx="3" fill="#2f8f6a"/><text x="559" y="660" font-size="12.5" fill="#4a5568">player crowding</text>
+</svg>
