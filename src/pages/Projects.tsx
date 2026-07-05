@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { projects } from "../data/projects";
 import "./Page.css";
 import "./Projects.css";
 
@@ -12,39 +13,18 @@ const Projects = () => {
             A collection of my side projects, experiments, and creative work.
           </p>
           <div className="projects-list">
-            <div className="project-item">
-              <h3 className="project-title">10YC</h3>
-              <p className="project-description">
-                A mobile native app that allows users to discover and index
-                meals in 10YC under $10.
-              </p>
-              <Link to="/projects/10yc" className="project-link">
-                Read more →
-              </Link>
-            </div>
-
-            <div className="project-item">
-              <h3 className="project-title">Saturday Hoops NYC</h3>
-              <p className="project-description">
-                A web app for my pick-up basketball community in NYC — players
-                sign up for games, pay, get balanced teams, and view their
-                highlights.
-              </p>
-              <Link to="/projects/saturday-hoops" className="project-link">
-                Read more →
-              </Link>
-            </div>
-
-            <div className="project-item">
-              <h3 className="project-title">Portfolio</h3>
-              <p className="project-description">
-                This website which shares what I've read, projects that I've
-                worked on, and my resume.
-              </p>
-              <Link to="/projects/portfolio" className="project-link">
-                Read more →
-              </Link>
-            </div>
+            {projects.map((project) => (
+              <div key={project.slug} className="project-item">
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-description">{project.description}</p>
+                <Link
+                  to={`/projects/${project.slug}`}
+                  className="project-link"
+                >
+                  Read more →
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>

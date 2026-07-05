@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Bookshelf from "./pages/Bookshelf";
 import Photos from "./pages/Photos";
@@ -18,7 +19,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<About />} />
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
           <Route path="bookshelf" element={<Bookshelf />} />
           <Route path="photos" element={<Photos />} />
           <Route path="projects" element={<Projects />} />

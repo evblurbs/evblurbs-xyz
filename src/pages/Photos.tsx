@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { photos as photoList } from "../data/photos";
 import "./Page.css";
 import "./Photos.css";
 
@@ -9,21 +10,8 @@ const Photos = () => {
   const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // In a real app, you'd fetch this from an API or file system
-    // For now, we'll use a simple approach to get photo filenames
-    const photoList = [
-      "photo1.jpg",
-      "photo2.jpg",
-      "photo3.jpg",
-      "photo4.jpg",
-      "photo5.jpg",
-      "photo6.jpg",
-      "photo7.jpg",
-      "photo8.jpg",
-      "photo9.jpg",
-    ];
-
-    const shuffledPhotoList = photoList.sort(() => Math.random() - 0.5);
+    // Shuffle a copy so the shared source array stays in its canonical order.
+    const shuffledPhotoList = [...photoList].sort(() => Math.random() - 0.5);
     setPhotos(shuffledPhotoList);
   }, []);
 

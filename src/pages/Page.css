@@ -22,6 +22,12 @@
   color: #374151;
 }
 
+/* Inline links inside body paragraphs read as links */
+.page-body p a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .intro-text {
   font-size: 1.25rem;
   font-weight: 500;
