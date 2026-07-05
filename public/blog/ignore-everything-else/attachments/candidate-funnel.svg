@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+<rect width="900" height="470" fill="#ffffff"/>
+<text x="40" y="46" font-size="24" font-weight="700" fill="#16202e">From 448 candidates to a review pile</text>
+<text x="40" y="72" font-size="14" fill="#8892a0">Four filters applied in turn on one 90-minute session. Each removes only what the earlier ones missed.</text>
+<text x="218" y="144" font-size="13.5" font-weight="600" text-anchor="end" fill="#3a4453">raw candidates</text>
+<rect x="232" y="116" width="548.0" height="46" rx="4" fill="#3f6fa8"/>
+<text x="768.0" y="145" font-size="16" font-weight="700" text-anchor="end" fill="#ffffff" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">448</text>
+<text x="218" y="206" font-size="13.5" font-weight="600" text-anchor="end" fill="#3a4453">Rimgate (geometry)</text>
+<rect x="709.1" y="178" width="70.9" height="46" rx="4" fill="#f2ddd5"/>
+<text x="744.5" y="206" font-size="12.5" font-weight="700" text-anchor="middle" fill="#c9553d">−58</text>
+<rect x="232" y="178" width="477.1" height="46" rx="4" fill="#3f6fa8"/>
+<text x="697.1" y="207" font-size="16" font-weight="700" text-anchor="end" fill="#ffffff" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">390</text>
+<text x="218" y="268" font-size="13.5" font-weight="600" text-anchor="end" fill="#3a4453">recall-safe queue</text>
+<rect x="632.0" y="240" width="77.1" height="46" rx="4" fill="#f2ddd5"/>
+<text x="670.5" y="268" font-size="12.5" font-weight="700" text-anchor="middle" fill="#c9553d">−63</text>
+<rect x="232" y="240" width="400.0" height="46" rx="4" fill="#3f6fa8"/>
+<text x="620.0" y="269" font-size="16" font-weight="700" text-anchor="end" fill="#ffffff" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">327</text>
+<text x="218" y="330" font-size="13.5" font-weight="600" text-anchor="end" fill="#3a4453">between-games</text>
+<rect x="610.0" y="302" width="22.0" height="46" rx="4" fill="#f2ddd5"/>
+<text x="638.0" y="330" font-size="12.5" font-weight="700" fill="#c9553d">−18</text>
+<rect x="232" y="302" width="378.0" height="46" rx="4" fill="#2f6f9e"/>
+<text x="598.0" y="331" font-size="16" font-weight="700" text-anchor="end" fill="#ffffff" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">309</text>
+<text x="218" y="392" font-size="13.5" font-weight="600" text-anchor="end" fill="#3a4453">side-hoop model</text>
+<rect x="539.0" y="364" width="70.9" height="46" rx="4" fill="#f2ddd5"/>
+<text x="574.5" y="392" font-size="12.5" font-weight="700" text-anchor="middle" fill="#c9553d">−58</text>
+<rect x="232" y="364" width="307.0" height="46" rx="4" fill="#3f6fa8"/>
+<text x="527.0" y="393" font-size="16" font-weight="700" text-anchor="end" fill="#ffffff" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">251</text>
+<text x="40" y="446" font-size="13.5" fill="#8892a0">The final <tspan font-weight="700" fill="#16202e">251</tspan> still hold all 76 makes — the filters never drop a basket. Going forward, that’s the pile I review, not all 448.</text>
+</svg>

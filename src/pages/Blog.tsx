@@ -4,6 +4,13 @@ import "./Blog.css";
 
 const posts = [
   {
+    title: "Teaching a Computer to Ignore Everything Else",
+    slug: "teaching-a-computer-to-ignore-everything-else",
+    date: "July 5, 2026",
+    excerpt:
+      "A follow-up on my basketball make-detector. Four filters cut my review pile from 448 candidates to 251 — without losing a single made basket. And writing the post exposed problems I didn't know I had.",
+  },
+  {
     title: "Teaching a Computer to Find Made Baskets",
     slug: "teaching-a-computer-to-find-made-baskets",
     date: "June 7, 2026",
