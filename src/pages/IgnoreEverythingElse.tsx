@@ -13,7 +13,14 @@ const Clip = ({
   caption: string;
 }) => (
   <figure className="post-clip-single">
-    <video controls playsInline muted preload="metadata" src={`${B}/clips/${src}#t=0.1`} />
+    <video
+      controls
+      playsInline
+      muted
+      preload="metadata"
+      poster={`${B}/clips/${src.replace(".mp4", ".jpg")}`}
+      src={`${B}/clips/${src}`}
+    />
     <figcaption>{caption}</figcaption>
   </figure>
 );
@@ -271,11 +278,25 @@ const IgnoreEverythingElse = () => {
 
               <div className="post-clips">
                 <figure>
-                  <video controls playsInline muted preload="metadata" src={`${B}/clips/debug-make-lowest.mp4#t=0.1`} />
+                  <video
+                    controls
+                    playsInline
+                    muted
+                    preload="metadata"
+                    poster={`${B}/clips/debug-make-lowest.jpg`}
+                    src={`${B}/clips/debug-make-lowest.mp4`}
+                  />
                   <figcaption>Lowest-confidence make (0.163)</figcaption>
                 </figure>
                 <figure>
-                  <video controls playsInline muted preload="metadata" src={`${B}/clips/debug-make-highest.mp4#t=0.1`} />
+                  <video
+                    controls
+                    playsInline
+                    muted
+                    preload="metadata"
+                    poster={`${B}/clips/debug-make-highest.jpg`}
+                    src={`${B}/clips/debug-make-highest.mp4`}
+                  />
                   <figcaption>Highest-confidence make (0.88)</figcaption>
                 </figure>
               </div>
