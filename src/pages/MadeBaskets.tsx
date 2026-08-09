@@ -117,7 +117,8 @@ const MadeBaskets = () => {
                     playsInline
                     muted
                     preload="metadata"
-                    src="/blog/made-baskets/clips/05-nearmiss-fires-2_19.mp4#t=0.1"
+                    poster="/blog/made-baskets/clips/05-nearmiss-fires-2_19.jpg"
+                    src="/blog/made-baskets/clips/05-nearmiss-fires-2_19.mp4"
                   />
                   <figcaption>Near-miss → fires</figcaption>
                 </figure>
@@ -127,7 +128,8 @@ const MadeBaskets = () => {
                     playsInline
                     muted
                     preload="metadata"
-                    src="/blog/made-baskets/clips/06-make-vanishes-2_24.mp4#t=0.1"
+                    poster="/blog/made-baskets/clips/06-make-vanishes-2_24.jpg"
+                    src="/blog/made-baskets/clips/06-make-vanishes-2_24.mp4"
                   />
                   <figcaption>Clean make → vanishes</figcaption>
                 </figure>
@@ -162,7 +164,8 @@ const MadeBaskets = () => {
                     playsInline
                     muted
                     preload="metadata"
-                    src="/blog/made-baskets/clips/classical-fail-1m12.mp4#t=0.1"
+                    poster="/blog/made-baskets/clips/classical-fail-1m12.jpg"
+                    src="/blog/made-baskets/clips/classical-fail-1m12.mp4"
                   />
                   <figcaption>Old approach (fails)</figcaption>
                 </figure>
@@ -172,7 +175,8 @@ const MadeBaskets = () => {
                     playsInline
                     muted
                     preload="metadata"
-                    src="/blog/made-baskets/clips/learned-catch-1m12.mp4#t=0.1"
+                    poster="/blog/made-baskets/clips/learned-catch-1m12.jpg"
+                    src="/blog/made-baskets/clips/learned-catch-1m12.mp4"
                   />
                   <figcaption>New approach (catches it)</figcaption>
                 </figure>
